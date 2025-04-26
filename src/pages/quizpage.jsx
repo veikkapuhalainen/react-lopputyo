@@ -3,6 +3,8 @@ import Button from "../components/button";
 import questions from "../data/questions";
 import { useEffect, useState } from "react";
 import QuestionCard from "../components/questioncard";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 // Kysymys sivun luominen
 function QuizPage() {
@@ -30,6 +32,9 @@ function QuizPage() {
 
     if (selectedOption === currentQuestion.correctAnswer) {
       setPoints(points + 1);
+      toast.success('Oikein!');
+    } else {
+        toast.error('Väärin');
     }
 
     if (questionIndex + 1 < selectedQuestions.length) {
@@ -40,7 +45,12 @@ function QuizPage() {
     }
 
     if (quizFinished) {
-        return <h1>Tähän joku komponentti, sait {points} pistettä!</h1>;
+        return (
+            <>
+                <h1>Tähän joku komponentti, sait {points} pistettä!</h1>;
+                <Button children={"End Quiz"} onClick={endQuiz} />
+            </>
+        )
     }
 
     if (selectedQuestions.length === 0) {
@@ -51,15 +61,18 @@ function QuizPage() {
         <>
             <div>
                 <div>
-                <h1>Let's start the Quiz!</h1>
-                <h3>Kysymys #{questionIndex + 1}</h3>
-                <h4>Pisteet: {points}</h4>
+                    {questionIndex === 0 ? <h1>Let's start the Quiz!</h1> : <h1>Hmm, what could the answer be?</h1>}
+                    <h3>Kysymys #{questionIndex + 1}</h3>
+                    <h4>Pisteet: {points}</h4>
                 </div>
                 <QuestionCard
                 question={selectedQuestions[questionIndex].question}
                 options={selectedQuestions[questionIndex].options}
                 answerSelected={checkAnswer}
                 />
+                <ToastContainer
+                    autoClose={1500}
+                    pauseOnHover={false} />
                 <Button children={"End Quiz"} onClick={endQuiz} />
             </div>
         </>
