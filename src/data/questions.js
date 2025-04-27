@@ -1,54 +1,55 @@
 const questions = [
     {
-        question: "Kysymys 1",
-        options: ["1", "2", "3", "4"],
-        correctAnswer: "2"
+      question: "Kuka on voittanut eniten jalkapallon Ballon d'Or -palkintoja?",
+      options: ["Cristiano Ronaldo", "Lionel Messi", "Zinedine Zidane", "Ronaldinho"],
+      correctAnswer: "Lionel Messi"
     },
     {
-        question: "Kysymys 2",
-        options: ["5", "6", "7", "8"],
-        correctAnswer: "7"
+      question: "Missä kaupungissa järjestettiin kesäolympialaiset vuonna 2012?",
+      options: ["Ateena", "Tokio", "Lontoo", "Peking"],
+      correctAnswer: "Lontoo"
     },
     {
-        question: "Kysymys 3",
-        options: ["9", "10", "11", "12"],
-        correctAnswer: "12"
+      question: "Kuinka monta pelaajaa on jääkiekkojoukkueella kentällä yhtä aikaa normaalisti (ei ylivoimaa/alivoimaa)?",
+      options: ["5", "6", "7", "4"],
+      correctAnswer: "6"
     },
     {
-        question: "Kysymys 4",
-        options: ["1", "2", "3", "4"],
-        correctAnswer: "1"
+      question: "Minkä maan autourheilija on voittanut eniten Formula 1 -maailmanmestaruuksia?",
+      options: ["Saksa", "Brasilia", "Ranska", "Italia"],
+      correctAnswer: "Saksa"
     },
     {
-        question: "Kysymys 5",
-        options: ["5", "6", "7", "8"],
-        correctAnswer: "6"
+      question: "Mikä on tenniksen suurin turnaus, joka pelataan ruohokentällä?",
+      options: ["Australian Open", "US Open", "French Open", "Wimbledon"],
+      correctAnswer: "Wimbledon"
     },
     {
-        question: "Kysymys 6",
-        options: ["9", "10", "11", "12"],
-        correctAnswer: "11"
+      question: "Minkä värinen kortti annetaan jalkapallossa suoraan ulosajosta?",
+      options: ["Keltainen", "Punainen", "Sininen", "Musta"],
+      correctAnswer: "Punainen"
     },
     {
-        question: "Kysymys 7",
-        options: ["1", "2", "3", "4"],
-        correctAnswer: "1"
+      question: "Montako reikää golfkentällä yleensä on?",
+      options: ["9", "12", "18", "24"],
+      correctAnswer: "18"
     },
     {
-        question: "Kysymys 8",
-        options: ["5", "6", "7", "8"],
-        correctAnswer: "5"
+      question: "Mikä maa on voittanut eniten jalkapallon miesten MM-kisoja?",
+      options: ["Saksa", "Italia", "Brasilia", "Argentiina"],
+      correctAnswer: "Brasilia"
     },
     {
-        question: "Kysymys 9",
-        options: ["9", "10", "11", "12"],
-        correctAnswer: "12"
+      question: "Kuka suomalainen yhdistetyn urheilija voitti kultaa Salt Lake Cityn olympialaisissa 2002?",
+      options: ["Mika Myllylä", "Iivo Niskanen", "Ville Nousiainen", "Samppa Lajunen"],
+      correctAnswer: "Samppa Lajunen"
     },
     {
-        question: "Kysymys 10",
-        options: ["1", "2", "3", "4"],
-        correctAnswer: "1"
+      question: "Missä lajissa kilpaillaan Stanley Cup -pokaalista?",
+      options: ["Baseball", "Koripallo", "Jääkiekko", "Amerikkalainen jalkapallo"],
+      correctAnswer: "Jääkiekko"
     }
-];
-
-export default questions;
+  ];
+  
+  export default questions;
+  

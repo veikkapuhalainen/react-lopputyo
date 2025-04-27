@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Button from "../components/button";
 
 function HomePage () {
     const navigate = useNavigate();
@@ -10,7 +9,7 @@ function HomePage () {
     return (
         <>
             <h1>Welcome to Quiz-Game</h1>
-            <Button children={"Start Quiz"} onClick={startQuiz} />
+            <button children={"Start Quiz"} onClick={startQuiz} />
         </>
     )
 }

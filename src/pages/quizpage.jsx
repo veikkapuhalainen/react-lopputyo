@@ -59,21 +59,18 @@ function QuizPage() {
 
     return (
         <>
-            <div>
-                <div>
-                    {questionIndex === 0 ? <h1>Let's start the Quiz!</h1> : <h1>Hmm, what could the answer be?</h1>}
-                    <h3>Kysymys #{questionIndex + 1}</h3>
-                    <h4>Pisteet: {points}</h4>
-                </div>
+            <div className="quiz-page">
                 <QuestionCard
+                questionNumber={questionIndex + 1}
                 question={selectedQuestions[questionIndex].question}
                 options={selectedQuestions[questionIndex].options}
+                points={points}
                 answerSelected={checkAnswer}
                 />
                 <ToastContainer
                     autoClose={1500}
                     pauseOnHover={false} />
-                <Button children={"End Quiz"} onClick={endQuiz} />
+                <button className="end-quiz-btn" children={"End Quiz"} onClick={endQuiz} />
             </div>
         </>
     );
