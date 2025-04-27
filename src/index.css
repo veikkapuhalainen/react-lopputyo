@@ -32,7 +32,7 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1.1;
   color: #E43F5A;
   margin-bottom: 50px;
@@ -54,22 +54,12 @@ button:hover {
   background-color: #E43F5A;
   color: #121629;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-.end-quiz-btn {
-  background-color: #121629;
-  color: #E43F5A;
-  font-weight: bolder;
-}
 
 .quiz-page {
   display: flex;
   flex-direction: column;
-  align-items: start;
 }
+
 
 
 @media (prefers-color-scheme: light) {
