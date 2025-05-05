@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import QuestionCard from "../components/questioncard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Feedback from "../components/feedback";
 
 // Kysymys sivun luominen
 function QuizPage() {
@@ -23,7 +24,7 @@ function QuizPage() {
   // Haetaan alussa kysymykset data/questions/, sekoitetaan ne ja asetetaan 10 ensimmäistä useStatelle
   useEffect(() => {
     const shuffled = questions.sort(() => Math.random() - 0.5);
-    const tenQuestions = shuffled.slice(0, 10);
+    const tenQuestions = shuffled.slice(0, 1);
     setQuestions(tenQuestions);
   }, []);
 
@@ -41,7 +42,6 @@ function QuizPage() {
       toast.error("Väärin");
     }
 
-
     if (questionIndex + 1 < selectedQuestions.length) {
       setQuestionIndex(questionIndex + 1);
       setSelectedOption(null);
@@ -51,10 +51,26 @@ function QuizPage() {
   }
 
   if (quizFinished) {
+    let feedbackText = "";
+    if (points >= 9) {
+      feedbackText = "Olet todellinen tietäjä!";
+    } else if (points >= 6) {
+      feedbackText = "Olet melko terävä kaveri!";
+    } else if (points >= 3) {
+      feedbackText = "Olet ihan perus jamppa :)";
+    } else {
+      feedbackText = "Uutta yritystä vaan...";
+    }
     return (
       <>
-        <h1>Tähän joku komponentti, sait {points} pistettä!</h1>;
-        <button className="end-quiz-btn" children={"End Quiz"} onClick={endQuiz} />
+        <div className="feedback-page">
+          <Feedback points={points} />;<h2>{feedbackText}</h2>
+          <button
+            className="end-quiz-btn"
+            children={"Lopeta Quiz"}
+            onClick={endQuiz}
+          />
+        </div>
       </>
     );
   }
@@ -77,7 +93,11 @@ function QuizPage() {
           answer={checkAnswer}
           endQuiz={endQuiz}
         />
-        <ToastContainer autoClose={1500} pauseOnHover={false} position="top-center" />
+        <ToastContainer
+          autoClose={1500}
+          pauseOnHover={false}
+          position="top-center"
+        />
       </div>
     </>
   );
