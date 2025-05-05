@@ -5,7 +5,7 @@ function FeedbackCard({ points }) {
   return (
     <>
       <h1>Tuloksesi:</h1>
-      <div className="feedback-page" style={{ width: 170, height: 170 }}>
+      <div style={{ width: 170, height: 170 }}>
         <CircularProgressbar
           maxValue={10}
           value={points}

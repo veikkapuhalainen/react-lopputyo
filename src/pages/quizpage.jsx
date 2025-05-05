@@ -27,7 +27,7 @@ function QuizPage() {
 
   // Haetaan alussa kysymykset data/questions/, sekoitetaan ne ja asetetaan 10 ensimmäistä useStatelle
   useEffect(() => {
-    const selectedQuestions = questions.filter( q => q.category === category);
+    const selectedQuestions = questions.filter((q) => q.category === category);
     const shuffled = selectedQuestions.sort(() => Math.random() - 0.5);
     const tenQuestions = shuffled.slice(0, 2);
     setQuestions(tenQuestions);
@@ -69,7 +69,8 @@ function QuizPage() {
     return (
       <>
         <div className="feedback-page">
-          <FeedbackCard points={points} />;<h2>{feedbackText}</h2>
+          <FeedbackCard points={points} />
+          <h2>{feedbackText}</h2>
           <button
             className="feedback-end-quiz-btn"
             children={"Lopeta Quiz"}
