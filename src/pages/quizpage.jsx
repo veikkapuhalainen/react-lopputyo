@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import Button from "../components/button";
 import questions from "../data/questions";
 import { useEffect, useState } from "react";
 import QuestionCard from "../components/questioncard";
@@ -55,7 +54,7 @@ function QuizPage() {
     return (
       <>
         <h1>Tähän joku komponentti, sait {points} pistettä!</h1>;
-        <button children={"End Quiz"} onClick={endQuiz} />
+        <button className="end-quiz-btn" children={"End Quiz"} onClick={endQuiz} />
       </>
     );
   }
