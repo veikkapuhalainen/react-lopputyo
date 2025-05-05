@@ -1,7 +1,7 @@
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-function Feedback({ points }) {
+function FeedbackCard({ points }) {
   return (
     <>
       <h1>Tuloksesi:</h1>
@@ -23,4 +23,4 @@ function Feedback({ points }) {
   );
 }
 
-export default Feedback;
+export default FeedbackCard;
