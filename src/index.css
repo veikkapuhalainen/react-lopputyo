@@ -25,7 +25,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: #121629;
@@ -33,9 +32,9 @@ body {
 
 h1 {
   font-size: 2.5em;
-  line-height: 1.1;
   color: #E43F5A;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  margin-top: 0;
 }
 
 h2 {
@@ -44,13 +43,17 @@ h2 {
   margin-bottom: 50px;
 }
 
+h3 {
+  margin-top: 80px;
+}
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   border-color: #E43F5A;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 600;
   font-family: inherit;
   background-color: #121629;
   color: #E43F5A;
@@ -61,6 +64,7 @@ button:hover {
   background-color: #E43F5A;
   color: #121629;
 }
+
 
 .quiz-page {
   display: flex;
@@ -73,6 +77,10 @@ button:hover {
   align-items: center;
 }
 
+.feedback-end-quiz-btn {
+  color: #ffffff;
+  background-color: #1D223B;
+}
 
 
 @media (prefers-color-scheme: light) {

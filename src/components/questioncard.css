@@ -47,6 +47,10 @@
     color: #ffffff;
 }
 
+.option-item:hover {
+    color: #FFFFFF;
+}
+
 .selected-option-item {
     margin-top: 10px;
     padding: 8px;
@@ -65,9 +69,17 @@
     color: #E43F5A;
     font-weight: bolder;
   }
+
+  .end-quiz-btn:hover {
+    color: #FFFFFF;
+  }
   
   .answer-quiz-btn {
-    background-color: #E43F5A;
-    color: #121629;
+    background-color: #121629;
+    color: #FFFFFF;
     font-weight: bolder;
+  }
+
+  .answer-quiz-btn:hover {
+    color: #FFFFFF;
   }

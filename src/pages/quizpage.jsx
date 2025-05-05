@@ -1,18 +1,22 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import questions from "../data/questions";
 import { useEffect, useState } from "react";
 import QuestionCard from "../components/questioncard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Feedback from "../components/feedback";
+import FeedbackCard from "../components/feedbackCard";
 
 // Kysymys sivun luominen
 function QuizPage() {
-  // 'End Quiz' nappi navigoi kotisivulle
+  // 'Lopeta Quiz' nappi navigoi kotisivulle
   const navigate = useNavigate();
   const endQuiz = () => {
     navigate("/");
   };
+
+  // Hae valittu kategoria
+  const location = useLocation();
+  const category = location.state?.category;
 
   // UseStatet pitämään huolta kysymyksistä, niiden indekseistä, käyttäjän pisteistä ja onko quiz loppu
   const [selectedQuestions, setQuestions] = useState([]);
@@ -23,8 +27,9 @@ function QuizPage() {
 
   // Haetaan alussa kysymykset data/questions/, sekoitetaan ne ja asetetaan 10 ensimmäistä useStatelle
   useEffect(() => {
-    const shuffled = questions.sort(() => Math.random() - 0.5);
-    const tenQuestions = shuffled.slice(0, 1);
+    const selectedQuestions = questions.filter( q => q.category === category);
+    const shuffled = selectedQuestions.sort(() => Math.random() - 0.5);
+    const tenQuestions = shuffled.slice(0, 2);
     setQuestions(tenQuestions);
   }, []);
 
@@ -37,9 +42,9 @@ function QuizPage() {
 
     if (selectedOption === currentQuestion.correctAnswer) {
       setPoints(points + 1);
-      toast.success("Oikein!");
+      toast.success("Vastaus oikein!");
     } else {
-      toast.error("Väärin");
+      toast.error("Vastaus väärin");
     }
 
     if (questionIndex + 1 < selectedQuestions.length) {
@@ -64,9 +69,9 @@ function QuizPage() {
     return (
       <>
         <div className="feedback-page">
-          <Feedback points={points} />;<h2>{feedbackText}</h2>
+          <FeedbackCard points={points} />;<h2>{feedbackText}</h2>
           <button
-            className="end-quiz-btn"
+            className="feedback-end-quiz-btn"
             children={"Lopeta Quiz"}
             onClick={endQuiz}
           />

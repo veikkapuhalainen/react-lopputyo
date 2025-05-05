@@ -13,10 +13,10 @@ function QuestionCard({
   return (
     <div className="question-card">
       <div className="question-card-header">
-        <div className="question-number">Question #{questionNumber}</div>
+        <div className="question-number">Kysymys #{questionNumber}</div>
         <div className="question-text">{question}</div>
       </div>
-      <div className="points">Points {points}</div>
+      <div className="points">Pisteet {points}/10</div>
       <div className="option-list">
         {options.map((option, index) => (
           <button
@@ -34,13 +34,13 @@ function QuestionCard({
       <div className="bottom-buttons">
         <button
           className="end-quiz-btn"
-          children={"End Quiz"}
+          children={"Lopeta"}
           onClick={endQuiz}
         />
         {selectedOption && (
         <button
             className="answer-quiz-btn"
-            children={"Answer"}
+            children={"Vastaa"}
             onClick={answer}
             />
       )}
