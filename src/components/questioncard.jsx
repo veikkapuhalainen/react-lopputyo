@@ -38,12 +38,12 @@ function QuestionCard({
           onClick={endQuiz}
         />
         {selectedOption && (
-        <button
+          <button
             className="answer-quiz-btn"
             children={"Vastaa"}
             onClick={answer}
-            />
-      )}
+          />
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import "./feedbackCard.css"
+import "./feedbackCard.css";
 
 function FeedbackCard({ points }) {
   return (

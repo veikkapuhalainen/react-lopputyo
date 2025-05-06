@@ -17,8 +17,8 @@
 .question-number {
     color: #e43f5A;
     margin-bottom: 20px;
-    font-weight: 200;
-    font-size: 0.7rem;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .question-text {
@@ -34,7 +34,7 @@
     justify-content: flex-end;
     margin-bottom: 10px;
     color: #e43f5A;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .option-list {
@@ -67,8 +67,9 @@
 
   .end-quiz-btn {
     background-color: #121629;
-    color: #E43F5A;
-    font-weight: bolder;
+    color: #FFFFFF;
+    width: 100px;
+    height: 50px;
   }
 
   .end-quiz-btn:hover {
@@ -76,9 +77,10 @@
   }
   
   .answer-quiz-btn {
-    background-color: #121629;
+    background-color: #1D223B;
     color: #FFFFFF;
-    font-weight: bolder;
+    width: 100px;
+    height: 50px;
   }
 
   .answer-quiz-btn:hover {
@@ -94,8 +96,7 @@
     }
 
     .question-number {
-        font-weight: 400;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     .question-text {
@@ -103,7 +104,7 @@
     }
 
     .points {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-top: 5px;
         margin-bottom: 20px;
     }
@@ -132,7 +133,7 @@
     }
 
     .question-number {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .question-text {
@@ -140,7 +141,7 @@
     }
 
     .points {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .option-list {

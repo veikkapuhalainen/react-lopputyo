@@ -32,6 +32,7 @@
     margin-top: 20px;
     background-color: #1D223B;
     color: #ffffff;
+    font-size: 1.3rem;
 }
 
 .category-btn:hover {
@@ -43,11 +44,13 @@
     margin-top: 20px;
     background-color: #E43F5A;
     color: #121629;
+    font-size: 1.3rem;
 }
 
 .start-quiz-btn {
     color: #ffffff;
     background-color: #1D223B;
+    width: 140px;
 }
 
 .start-quiz-btn:hover {
@@ -106,5 +109,9 @@
     .selected-category-btn {
         width: 250px;
         margin: 10px;
+    }
+
+    .start-quiz-btn {
+        width: 160px;
     }
 }
