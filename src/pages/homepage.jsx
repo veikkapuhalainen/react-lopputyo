@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import "./homepage.css"
+import homepageImage from "../assets/readyForAQuiz.jpg"
 
 function HomePage() {
   const [category, setCategory] = useState(null);
@@ -13,6 +14,7 @@ function HomePage() {
     <>
     <div className="homepage">
       <h1 className="homepage-header">Quiz-Game</h1>
+      <img src={homepageImage} alt="Ready For A Quiz" className="homepage-image"></img>
       <h3 className="homepage-subheader">Luuletko tietäväsi kaiken urheilusta?</h3>
       <h3 className="homepage-subheader">Entä historiasta?</h3>
       <h3>Valitse mielenkiintoisin kategoria ja testaa!</h3>

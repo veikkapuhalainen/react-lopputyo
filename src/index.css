@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 button {
@@ -74,7 +74,6 @@ button:hover {
 
   h3 {
     font-size: 1.3rem;
-    margin-top: 100px;
   }
 
   button {
@@ -98,8 +97,8 @@ button:hover {
   }
 
   h3 {
-    font-size: 1.8rem;
-    margin-top: 100px;
+    font-size: 1.65rem;
+    margin-top: 40px;
   }
 
   button {
