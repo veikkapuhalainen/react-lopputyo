@@ -1,0 +1,21 @@
+
+.quiz-page {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feedback-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-end-quiz-btn {
+    color: #ffffff;
+    background-color: #1D223B;
+  }
+  
+  .feedback-end-quiz-btn:hover {
+    color: #FFFFFF;
+  }
+  

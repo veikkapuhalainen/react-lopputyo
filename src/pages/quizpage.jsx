@@ -5,6 +5,7 @@ import QuestionCard from "../components/questioncard";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import FeedbackCard from "../components/feedbackCard";
+import "./quizpage.css"
 
 // Kysymys sivun luominen
 function QuizPage() {
