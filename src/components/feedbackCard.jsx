@@ -1,11 +1,12 @@
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import "./feedbackCard.css"
 
 function FeedbackCard({ points }) {
   return (
     <>
       <h1>Tuloksesi:</h1>
-      <div style={{ width: 170, height: 170 }}>
+      <div className="progressbar">
         <CircularProgressbar
           maxValue={10}
           value={points}

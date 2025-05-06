@@ -1,3 +1,5 @@
+/*Default mobile size*/
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -25,12 +27,12 @@ body {
 h1 {
   font-size: 2.5em;
   color: #E43F5A;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   margin-top: 0;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.3rem;
   color: #FFFFFF;
   margin-top: 30px;
   margin-bottom: 50px;
@@ -44,8 +46,8 @@ button {
   border-radius: 8px;
   border: 1px solid transparent;
   border-color: #E43F5A;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 10px;
+  font-size: 1rem;
   font-weight: 600;
   font-family: inherit;
   background-color: #121629;
@@ -58,3 +60,51 @@ button:hover {
   color: #121629;
 }
 
+
+/*Tablet size*/
+@media (min-width: 650px) {
+
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-top: 100px;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 12px;
+  }
+}
+
+
+/*Desktop size*/
+@media (min-width: 1024px) {
+
+  h1 {
+    font-size: 4.5rem;
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    margin-top: 100px;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 16px;
+    border-radius: 14px;
+  }
+}

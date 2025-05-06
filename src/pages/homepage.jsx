@@ -12,9 +12,9 @@ function HomePage() {
   return (
     <>
     <div className="homepage">
-      <h1>Quiz Game</h1>
-      <h3 className="homepage-header">Luuletko tietäväsi kaiken urheilusta?</h3>
-      <h3 className="homepage-header">Entä historiasta?</h3>
+      <h1 className="homepage-header">Quiz-Game</h1>
+      <h3 className="homepage-subheader">Luuletko tietäväsi kaiken urheilusta?</h3>
+      <h3 className="homepage-subheader">Entä historiasta?</h3>
       <h3>Valitse mielenkiintoisin kategoria ja testaa!</h3>
       <div className="category-container">
         <button

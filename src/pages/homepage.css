@@ -1,12 +1,13 @@
+/*Default mobile size*/
 .homepage {
     color: #ffffff;
 }
-.homepage-header {
+.homepage-subheader {
     margin: 0;
 }
   
 .start-quiz-container {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .category-container {
@@ -16,8 +17,7 @@
 }
 
 .category-btn {
-    margin-top: 10px;
-    padding: 8px;
+    margin-top: 20px;
     background-color: #1D223B;
     color: #ffffff;
 }
@@ -28,8 +28,7 @@
   }
 
 .selected-category-btn {
-    margin-top: 10px;
-    padding: 8px;
+    margin-top: 20px;
     background-color: #E43F5A;
     color: #121629;
 }
@@ -41,4 +40,47 @@
 
 .start-quiz-btn:hover {
     color: white;
+}
+
+
+
+/*Tablet size*/
+@media (min-width: 650px) {
+
+    .homepage-subheader {
+        font-size: 1.3rem;
+    }
+}
+
+
+/*Desktop size*/
+@media (min-width: 1024px) {
+
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homepage-subheader {
+        font-size: 1.8rem;
+    }
+
+    .category-container {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 540px;
+    }
+
+    .category-btn {
+        width: 250px;
+        margin: 10px;
+    }
+
+    .selected-category-btn {
+        width: 250px;
+        margin: 10px;
+    }
 }

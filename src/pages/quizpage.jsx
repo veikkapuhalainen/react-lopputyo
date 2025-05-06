@@ -30,7 +30,7 @@ function QuizPage() {
   useEffect(() => {
     const selectedQuestions = questions.filter((q) => q.category === category);
     const shuffled = selectedQuestions.sort(() => Math.random() - 0.5);
-    const tenQuestions = shuffled.slice(0, 2);
+    const tenQuestions = shuffled.slice(0, 1);
     setQuestions(tenQuestions);
   }, []);
 
