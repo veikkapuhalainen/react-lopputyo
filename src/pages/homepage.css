@@ -25,7 +25,7 @@
 .category-container {
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    justify-content: space-between;
 }
 
 .category-btn {
@@ -36,14 +36,14 @@
 }
 
 .category-btn:hover {
-    background-color: #e43f5a;
+    background-color: #E02947;
     color: white;
   }
 
 .selected-category-btn {
     margin-top: 20px;
-    background-color: #E43F5A;
-    color: #121629;
+    background-color: #E02947;
+    color: #000000;
     font-size: 1.3rem;
 }
 

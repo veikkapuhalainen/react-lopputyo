@@ -25,7 +25,7 @@ body {
 
 h1 {
   font-size: 2.5em;
-  color: #E43F5A;
+  color: #E02947;
   margin-bottom: 40px;
   margin-top: 0;
   text-shadow: 4px 5px 1px #000000;
@@ -45,20 +45,20 @@ h3 {
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  border-color: #E43F5A;
+  border-color: #E02947;
   padding: 10px;
   font-size: 1.2rem;
   font-weight: 600;
   font-family: 'Bebas Neue', system-ui, Avenir, Helvetica, Arial, sans-serif;
   background-color: #121629;
-  color: #E43F5A;
+  color: #E02947;
   cursor: pointer;
   transition: background-color 0.25s;
   letter-spacing: 1.5px;
 }
 button:hover {
-  background-color: #E43F5A;
-  color: #121629;
+  background-color: #E02947;
+  color: #000000;
 }
 
 
@@ -92,7 +92,7 @@ button:hover {
 
   h1 {
     font-size: 4.5rem;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
   }
 
   h2 {

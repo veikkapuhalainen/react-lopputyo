@@ -15,7 +15,7 @@
 }
 
 .question-number {
-    color: #e43f5A;
+    color: #E02947;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: 1rem;
@@ -33,7 +33,7 @@
     flex-direction: row;
     justify-content: flex-end;
     margin-bottom: 10px;
-    color: #e43f5A;
+    color: #E02947;
     font-size: 1rem;
 }
 
@@ -55,8 +55,8 @@
 
 .selected-option-item {
     margin-top: 20px;
-    background-color: #e43f5A;
-    color: #121629;
+    background-color: #E02947;
+    color: #000000;
 }
 
 .bottom-buttons {

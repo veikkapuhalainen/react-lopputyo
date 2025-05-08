@@ -19,9 +19,9 @@ function HomePage() {
         <h1 className="homepage-header">Quiz-Game</h1>
         <img
           src={homepageImage}
-          alt="Ready For A Quiz"
+          alt="Ready For A Quiz Picture"
           className="homepage-image"
-        ></img>
+        />
         <h3 className="homepage-subheader">
           Luuletko tietäväsi kaiken urheilusta?
         </h3>
