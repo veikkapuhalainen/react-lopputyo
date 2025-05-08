@@ -76,7 +76,7 @@ const questions = [
   },
   {
     category: "Historia",
-    question: "Missä kaupungissa muuri kaatui vuonna 1989?",
+    question: "Missä kaupungissa kaatui muuri vuonna 1989?",
     options: ["Berliini", "Lontoo", "Pariisi", "Moskova"],
     correctAnswer: "Berliini"
   },
