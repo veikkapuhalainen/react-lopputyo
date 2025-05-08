@@ -10,6 +10,7 @@ function QuestionCard({
   answer,
   endQuiz,
 }) {
+  // Kysymsy-kortti, kysymyksen numero, kysymys, pisteet, vastausvaihtoehdot, lopeta- ja vastaa-nappi
   return (
     <div className="question-card">
       <div className="question-card-header">

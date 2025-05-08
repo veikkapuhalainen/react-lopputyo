@@ -3,6 +3,7 @@ import "react-circular-progressbar/dist/styles.css";
 import "./feedbackCard.css";
 
 function FeedbackCard({ points }) {
+  // Palautekortti, Progressbar ja palautelause pisteiden mukaan (määritetään quizpagella)
   return (
     <>
       <h1>Tuloksesi:</h1>

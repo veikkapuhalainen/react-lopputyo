@@ -4,7 +4,10 @@ import "./homepage.css";
 import homepageImage from "../assets/readyForAQuiz.jpg";
 
 function HomePage() {
+  // Usestate kategorian valitsemiseen
   const [category, setCategory] = useState(null);
+
+  // Navigointi 'Aloita' nappia painatessa
   const navigate = useNavigate();
   const startQuiz = () => {
     navigate("/quizpage", { state: { category } });

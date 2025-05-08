@@ -7,7 +7,6 @@ import "react-toastify/dist/ReactToastify.css";
 import FeedbackCard from "../components/feedbackCard";
 import "./quizpage.css";
 
-// Kysymys sivun luominen
 function QuizPage() {
   // 'Lopeta Quiz' nappi navigoi kotisivulle
   const navigate = useNavigate();
@@ -26,7 +25,7 @@ function QuizPage() {
   const [quizFinished, setQuizFinished] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
-  // Haetaan alussa kysymykset data/questions/, sekoitetaan ne ja asetetaan 10 ensimmäistä useStatelle
+  // Haetaan alussa oikeat kysymykset data/questions/ kategorian perusteella, sekoitetaan ne ja asetetaan 10 ensimmäistä useStatelle
   useEffect(() => {
     const selectedQuestions = questions.filter((q) => q.category === category);
     const shuffled = selectedQuestions.sort(() => Math.random() - 0.5);
@@ -34,13 +33,16 @@ function QuizPage() {
     setQuestions(tenQuestions);
   }, []);
 
+  // Valittu vastaus
   function markSelectedOption(option) {
     setSelectedOption(option);
   }
 
+  // Kun painetaan 'Vastaa' nappia:
   function checkAnswer() {
     const currentQuestion = selectedQuestions[questionIndex];
 
+    // Jos vastaus on oikea, lisää pisteitä, näytä oikea toast komponentti
     if (selectedOption === currentQuestion.correctAnswer) {
       setPoints(points + 1);
       toast.success("Vastaus oikein!");
@@ -48,6 +50,7 @@ function QuizPage() {
       toast.error("Vastaus väärin");
     }
 
+    // Onko quiz loppu eli onko seuraava kysymyks indeksi > valitun kysymyslistan pituus
     if (questionIndex + 1 < selectedQuestions.length) {
       setQuestionIndex(questionIndex + 1);
       setSelectedOption(null);
@@ -56,6 +59,7 @@ function QuizPage() {
     }
   }
 
+  // Jos quiz on loppu näytetään feedback kortti
   if (quizFinished) {
     let feedbackText = "";
     if (points >= 9) {
@@ -82,10 +86,12 @@ function QuizPage() {
     );
   }
 
+  // Console näyttää erroria ilman tätä palautusta, koska kysymysten sekoittaminen ja filtteröinti on hidasta
   if (selectedQuestions.length === 0) {
     return <div>Ladataan kysymyksiä...</div>;
   }
 
+  // Kysymyksen ja vastausvaihtoehtojen näyttäminen
   return (
     <>
       <div className="quiz-page">
