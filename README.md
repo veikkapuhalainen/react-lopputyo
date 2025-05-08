@@ -1,3 +1,7 @@
+## Linkki Projektiin
+
+https://react-lopputyo.vercel.app/
+
 ## Projektin teko
 
 Tein tämän projektin kokonaan yksin. En ole VDM-kurssilla ja omien aikataulujen takia koin projektin tekemisen yksin
@@ -10,4 +14,6 @@ Sivuston on tarkoitus olla kaveriporukan illanviettoon tarkoitettu tietovisa. T�
 Aikani/osaamiseni ei riittänyt leaderboard ominaisuuden tekemiseen sivulle, mikä olisi lisännyt sivun mielenkiintoisuutta illanvietto näkökulmasta.
 
 ## Muuta
+ Sivusto http://html5.validator.nu/ ei anna sivuiltani mitään virhettä.
+
  Sivusto  http://jigsaw.w3.org/css-validator/ antaa sivultani muutaman virheen css-tiedostoista :root ja toast-container kohdista. Nämä virheet eivät vaikuta sivun toimintaan millään tavalla. En ymmärrä niiden syytä, enkä saanut ChatGPT:n avullakaan niihin ratkaisua.
