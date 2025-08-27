@@ -1,19 +1,18 @@
-## Linkki Projektiin
+# React Loppuprojekti
 
-https://react-lopputyo.vercel.app/
+Projekti on julkaistu osoitteessa: [react-lopputyo.vercel.app](https://react-lopputyo.vercel.app/)
 
-## Projektin teko
+## Projekti
 
-Tein tämän projektin kokonaan yksin. En ole VDM-kurssilla ja omien aikataulujen takia koin projektin tekemisen yksin
-parhaaksi vaihtoehdoksi.
-Työtunteja käytin kaikkiaan noin 40 tuntia.
+Tämä projekti on toteutettu Reactilla ja toimii kurssin loppuprojektina.
+Sivuston on tarkoitus olla kaveriporukan illanviettoon tarkoitettu hauska tietovisa. Sivulla voi kategorian mukaan suorittaa 10-kysymyksen tietovisan.
+Projektissa on toteutettu moderneja web-kehityksen käytäntöjä, ja käyttöliittymä on pyritty pitämään selkeänä ja responsiivisena.
 
-## Projektin idea
 
-Sivuston on tarkoitus olla kaveriporukan illanviettoon tarkoitettu tietovisa. Tämän teeman perusteella tein valinnat väreihin ja sivun yleiseen tyyliin. Halusin sen olevan helppokäyttöinen ja selkeä. Sivulla voi kategorian mukaan suorittaa 10-kysymyksen tietovisan.
-Aikani/osaamiseni ei riittänyt leaderboard ominaisuuden tekemiseen sivulle, mikä olisi lisännyt sivun mielenkiintoisuutta illanvietto näkökulmasta.
+## Ominaisuudet
 
-## Muuta
- Sivusto http://html5.validator.nu/ ei anna sivuiltani mitään virhettä.
-
- Sivusto  http://jigsaw.w3.org/css-validator/ antaa sivultani muutaman virheen css-tiedostoista :root ja toast-container kohdista. Nämä virheet eivät vaikuta sivun toimintaan millään tavalla. En ymmärrä niiden syytä, enkä saanut ChatGPT:n avullakaan niihin ratkaisua.
+- Rakennettu **Reactilla**  
+- Responsiivinen käyttöliittymä  
+- Komponenttipohjainen arkkitehtuuri  
+- Reititys sivujen välillä  
+- Julkaistu Vercel-palvelussa 
